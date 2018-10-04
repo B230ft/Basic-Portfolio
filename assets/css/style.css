@@ -32,11 +32,26 @@ header, .content {
 
 }
 
-li {
+#page1 {
     float: left;
-    padding: 5px;
-    border-right: 1px solid #4aaaa5;
+    padding: 3px;
+    
     display: inline-block;
+}
+
+#page2 {
+	border-left: 1px solid #4aaaa5;
+	padding: 3px;
+    
+    display: inline-block;
+}
+
+#page3 {
+	border-left: 1px solid #4aaaa5;
+	padding: 3px;
+    
+    display: inline-block;
+
 }
 
 html {
@@ -60,27 +75,39 @@ html {
 h1 {
 	position: absolute;
     left: 368px;
-    top: 116px;
+    top: 97px;
     background-color: #4aaaa5;
     color: white;
     height: 39px;
     padding: 10px;
 }
-}
+
 
 h2 {
-	border-bottom: 2px solid #dddddd;
+	border-bottom: 1px solid #4aaaa5;
 	color: #4aaaa5;
 	margin-bottom: 28px;
 	padding-bottom: 18px;
+	font-size: 28px;
+	font-weight: bold;
 }
 
 h5{
 	color: white;
 	margin-bottom: 8px;
-	
-	
-	
+}
+
+h3 {
+	position: absolute;
+    left: 15px;
+    bottom: 15px;
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px;
+    text-align: center;
+    width: 110px;
 }
 
 h1, h2, h3, h5 {
@@ -97,13 +124,13 @@ nav {
 
 .content {
 	border: 1px solid #dddddd;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	overflow: hidden;
-	padding: 24px;
-	width: 500px;
-	height:500px;
-	margin-left: 350px;
+    margin-top: 9px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding: 24px;
+    width: 500px;
+    height: 594px;
+    margin-left: 350px;
 }
 
 img {
@@ -113,7 +140,7 @@ img {
 }
 
 footer {
-	position: static;
+	position: relative;
 	left: 0;
 	bottom: 0;
 	width: 100%
@@ -122,13 +149,16 @@ footer {
     border-top: 5px solid #4aaaa5;
     padding-top: 24px;
 	text-align: center;
+	width: 100%;
+	float: left;
+    clear: both;
 	
 }
 
 form {
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0;
+	padding: 19px;
 }
 
 input[type=email], input[type=text], textarea {
@@ -144,13 +174,10 @@ textarea {
 }
 
 .row {
-	position: absolute;
-    left: 368px;
-    top: 116px;
-    background-color: #4aaaa5;
-    color: white;
-    height: 39px;
-    padding: 10px;
+	
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 
 }
 
@@ -158,10 +185,11 @@ textarea {
 
 .portfolio-card {
 	position: relative;
-	float: left;
-	margin-right: 18px;
-	margin-bottom: 18px;
-
+    float: left;
+    margin-right: 14px;
+    margin-bottom: -45px;
+    
+    margin-top: 24px;
 }
 
 .card {
